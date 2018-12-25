@@ -307,6 +307,24 @@
         </ratesource>
         <cryptologo cryptocurrency="WDC" file="wdc.png"/>
     </extension>
+	<extension class="com.generalbytes.batm.server.extensions.extra.bcash.BCashExtension" >
+        <wallet prefix="bcash" name="bcash">
+            <param name="protocol" />
+            <param name="user" />
+            <param name="password" />
+            <param name="host" />
+            <param name="port" />
+            <param name="accountname" />
+            <cryptocurrency>BCASH</cryptocurrency>
+        </wallet>
+        <ratesource prefix="bcashfix" name ="Fix Price" >
+            <param name="price" />
+            <cryptocurrency>BCASH</cryptocurrency>
+            <help>USD is default fiat currency.</help>
+        </ratesource>
+        <cryptologo cryptocurrency="BCASH" file="bcash.png"/>
+        <cryptologo cryptocurrency="BCASH" file="bcash.svg"/>
+    </extension>
     <extension class="com.generalbytes.batm.server.extensions.extra.dash.DashExtension" >
         <wallet prefix="dashd" name="dashd">
             <param name="protocol" />
