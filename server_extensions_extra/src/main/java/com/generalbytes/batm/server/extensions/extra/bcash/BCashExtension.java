@@ -65,7 +65,7 @@ public class BCashExtension extends AbstractExtension{
     @Override
     public ICryptoAddressValidator createAddressValidator(String cryptoCurrency) {
         if (Currencies.BCASH.equalsIgnoreCase(cryptoCurrency)) {
-            return new BcashAddressValidator();
+            return new BCashAddressValidator();
         }
         return null;
     }
